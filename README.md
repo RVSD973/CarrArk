@@ -56,3 +56,37 @@ Avis :
 Vous n'êtes pas tenu de respecter la licence pour les éléments du matériel qui sont dans le domaine public ou dont l'utilisation est autorisée par une exception ou une limitation applicable .
 
 Aucune garantie n'est donnée. La licence peut ne pas vous donner toutes les autorisations nécessaires à l'utilisation que vous souhaitez en faire. Par exemple, d'autres droits tels que les droits de publicité, de confidentialité ou les droits moraux peuvent limiter la manière dont vous utilisez le matériel.
+
+## Discord Bot Setup
+
+### Prerequisites
+
+- Python 3.6 or higher
+- `discord.py` library
+
+### Installation
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/JoeCaire/CarrArk.git
+   cd CarrArk/discord_bot
+   ```
+
+2. Install the required dependencies:
+   ```sh
+   pip install discord.py
+   ```
+
+3. Create a new file named `.env` in the `discord_bot` directory and add your Discord bot token:
+   ```sh
+   DISCORD_BOT_TOKEN=YOUR_DISCORD_BOT_TOKEN
+   ```
+
+### Running the Bot
+
+To run the bot, execute the following command:
+```sh
+python bot.py
+```
+
+The bot should now be running and ready to respond to slash commands on your Discord server.
