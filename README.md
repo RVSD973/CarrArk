@@ -30,10 +30,22 @@ Afin de rendre encore plus simple d'utilisation au profit de la communauté fran
 
 -- [Joe-Caire](https://robertsspaceindustries.com/citizens/Joe-Caire) @ [Sibylla](https://sibyllasc.fr/)
 
-Un grand merci à [SandovalBurrows](https://robertsspaceindustries.com/citizens/SandovalBurrows) @ [NOVA Intergalactic](https://novaintergalactic.com/) pour la souche très prometteuse de son travail. Et aussi tous les autres créateurs de contenu du genre :
+Credit :
+Un grand merci à [SandovalBurrows](https://robertsspaceindustries.com/citizens/SandovalBurrows) @ [NOVA Intergalactic](https://novaintergalactic.com/) pour la souche très prometteuse de son travail. 
 
- - ([LordSkippy](https://robertsspaceindustries.com/citizens/LordSkippy) @ [Verseguide](https://verseguide.com/)
- - [Murphy "(ItsjustmeMurphy)"](https://docs.google.com/spreadsheets/d/1aGJ0_49ve1NKf0GvSteSt3-a4jSxnj2snHmTDwKTBgs/edit?gid=1238406064#gid=1238406064) 
+Et aussi Merci à tous les autres créateurs de contenu du genre :
+
+ - [LordSkippy](https://robertsspaceindustries.com/citizens/LordSkippy) @ [Verseguide](https://verseguide.com/)
+ - Murphy "ItsjustmeMurphy" @ [Murphy's Navigation Tool](https://docs.google.com/spreadsheets/d/1aGJ0_49ve1NKf0GvSteSt3-a4jSxnj2snHmTDwKTBgs/edit?gid=1238406064#gid=1238406064)
+ - Graupunkt               
+ - xabdiben of Gallog
+ - CaptSheppard
+ - Pandabot
+ - Bo-Fone
+ - Smarty
+ - Bearded Nugget
+ - StoicMako
+ - Thanitorial
 
 ## License
 
