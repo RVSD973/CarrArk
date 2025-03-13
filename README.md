@@ -36,16 +36,17 @@ Un grand merci à [SandovalBurrows](https://robertsspaceindustries.com/citizens/
 Et aussi Merci à tous les autres créateurs de contenu du genre :
 
  - [LordSkippy](https://robertsspaceindustries.com/citizens/LordSkippy) @ [Verseguide](https://verseguide.com/)
- - Murphy "ItsjustmeMurphy" @ [Murphy's Navigation Tool](https://docs.google.com/spreadsheets/d/1aGJ0_49ve1NKf0GvSteSt3-a4jSxnj2snHmTDwKTBgs/edit?gid=1238406064#gid=1238406064)
- - Graupunkt @ [Starmap Space](https://starmap.space/)          
- - xabdiben of Gallog
- - CaptSheppard
- - Pandabot
- - Bo-Fone
- - Smarty
- - Bearded Nugget
- - StoicMako
- - Thanitorial
+ - [Murphy "justMurphy"](https://robertsspaceindustries.com/citizens/Muprhy) @ [Murphy's Navigation Tool](https://docs.google.com/spreadsheets/d/1aGJ0_49ve1NKf0GvSteSt3-a4jSxnj2snHmTDwKTBgs/edit?gid=1238406064#gid=1238406064)
+ - [Graupunkt](https://robertsspaceindustries.com/citizens/Graupunkt) @ [Starmap Space](https://starmap.space/)          
+ - [xabdiben of Gallog ](https://robertsspaceindustries.com/citizens/xabdiben)
+ - [CaptSheppard](https://robertsspaceindustries.com/citizens/CaptSheppard)
+ - [Pandabot](https://robertsspaceindustries.com/citizens/Pandabot)
+ - [Bo-Fone](https://robertsspaceindustries.com/citizens/Bo-Fone)
+ - [Smarty](https://robertsspaceindustries.com/citizens/SmartySG)
+ - [Bearded Nugget](https://robertsspaceindustries.com/citizens/bearded_Nugget)
+ - [StoicMako](https://robertsspaceindustries.com/citizens/StoicMako)
+ - [Thanitorial](https://robertsspaceindustries.com/citizens/Thanitor)
+ - [Valalol](https://robertsspaceindustries.com/citizens/Valalol)
 
 ## License
 
