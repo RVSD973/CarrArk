@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CarrARK - StarMap API Viewer</title>
+  <style>
+.btn-ret {
+  color:#C4D7E6;
+  background:#3B4C57;
+  padding: 10px 60px 10px 60px;
+  position: relative;
+  /*font-family: "Electrolize", sans-serif;*/
+  font-family: "nasalization", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: .7px;
+  text-transform: none;
+  border-radius: 5px;
+}
+.btn-ret:hover {
+  background: #51606C;
+}
+
+.btn-ret::before {
+  content:'';
+  border-top:12px solid #0b0c10;
+  border-right: 12px solid transparent;
+  position: absolute;
+  left:0;
+  top: 0
+}
+.btn-ret::after {
+  content:'';
+  border-bottom:12px solid #0b0c10;
+  border-left: 12px solid transparent;
+  position: absolute;
+  right:0;
+  bottom:0
+}
+  </style>
+
+  	<a class="btn-ret" href="index.html" title="Retour vers CarrArk">CarrArk - Navigator</a>
+	<style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #0b0c10;
+      color: #c5c6c7;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      padding: 10px;
+      border: 1px solid #45a29e;
+      text-align: left;
+    }
+    th {
+      background-color: #1f2833;
+    }
+    tr:nth-child(even) {
+      background-color: #1f2833;
+    }
+    #filters {
+      margin-top: 20px;
+    }
+    label, select {
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>CarrARK - StarMap API Viewer</h1>
+  <div id="loading">Chargement des données...</div>
+
+  <div id="filters" style="display:none;">
+    <label for="type-filter">Filtrer par type :</label>
+    <select id="type-filter">
+      <option value="">-- Tous --</option>
+    </select>
+    <p>Author :<a href="https://robertsspaceindustries.com/citizens/Graupunkt" target="_blank">@Graupunkt</a> - <a href="https://starmap.space/" target="_blank">API Source Starmap.space</a><a href="https://starmap.space/" target="_blank">
+    <img id="logo" src="./image/logostarmaptk.png" style="height: 3em; vertical-align: middle;">
+  </a> </p>
+  </div>
+
+  <table id="data-table" style="display:none;">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Système</th>
+        <th>Objet</th>
+        <th>Type</th>
+        <th>OM vers noyau (OM Radius - km)</th>
+        <th>Surface vers Noyau (BodyRadius - km)</th>
+        <th>Coordonnées (X, Y, Z)</th>
+        <th>Commentaire</th>
+		<th>Date</th>
+      </tr>
+    </thead>
+    <tbody id="table-body">
+      <!-- Données injectées ici -->
+    </tbody>
+  </table>
+
+  <script>
+    fetch("https://starmap.space/api/v3/oc/index.php")
+      .then(response => response.json())
+      .then(data => {
+        const table = document.getElementById("data-table");
+        const tbody = document.getElementById("table-body");
+        const loading = document.getElementById("loading");
+        const filters = document.getElementById("filters");
+        const typeFilter = document.getElementById("type-filter");
+
+        const allRows = [];
+        const typeSet = new Set();
+
+        data.forEach(objet => {
+          typeSet.add(objet.Type);
+          const row = document.createElement("tr");
+
+          const orbitalMarkerRadiusKm = (objet.OrbitalMarkerRadius / 1000).toLocaleString();
+          const bodyRadiusKm = (objet.BodyRadius / 1000).toLocaleString();
+
+          row.innerHTML = `
+            <td>${objet.item_id}</td>
+            <td>${objet.System}</td>
+            <td>${objet.ObjectContainer}</td>
+            <td>${objet.Type}</td>
+            <td>${orbitalMarkerRadiusKm}</td>
+            <td>${bodyRadiusKm}</td>
+            <td>${objet.XCoord}, ${objet.YCoord}, ${objet.ZCoord}</td>
+            <td>${objet.Comment || ""}</td>
+			<td>${objet.Submitted}</td>
+          `;
+
+          row.dataset.type = objet.Type;
+          allRows.push(row);
+          tbody.appendChild(row);
+        });
+
+        // Remplir le filtre de types
+        Array.from(typeSet).sort().forEach(type => {
+          const option = document.createElement("option");
+          option.value = type;
+          option.textContent = type;
+          typeFilter.appendChild(option);
+        });
+
+		// Définir l'option par défaut
+		if (typeSet.size > 0) {
+  		const defaultType = Array.from(typeSet)[1]; // Prendre le premier type comme valeur par défaut
+  		typeFilter.value = defaultType;
+  		const option = typeFilter.querySelector(`option[value="${defaultType}"]`);
+  		if (option) {
+    	option.selected = true;
+  			}
+		}
+		
+        // Ajout du filtre de type
+        typeFilter.addEventListener("change", () => {
+          const selectedType = typeFilter.value;
+          tbody.innerHTML = "";
+          allRows.forEach(row => {
+            if (!selectedType || row.dataset.type === selectedType) {
+              tbody.appendChild(row);
+            }
+          });
+        });
+
+		// Déclencher l'événement change pour appliquer le filtre par défaut
+		typeFilter.dispatchEvent(new Event("change"));
+		
+        loading.style.display = "none";
+        table.style.display = "table";
+        filters.style.display = "block";
+      })
+      .catch(error => {
+        document.getElementById("loading").textContent = "Erreur de chargement : " + error;
+        console.error("Erreur API:", error);
+      });
+  </script>
+</body>
+</html>
