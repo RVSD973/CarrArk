@@ -1,8 +1,13 @@
 # CarrArk Navigator
 
-Le CarrArk Navigator est un outil open source permettant de marquer et de partager des emplacements de surface dans Star Citizen. En attendant l'implémentation dans la Starmap du stockage et partage de Point d'interêt. Chaque planète et chaque lune disposent de marqueurs orbitaux (OM 1 à 6) qui sont géostationnaires et peuvent être utilisés pour la navigation. Cela nous donne un moyen de stocker notre position en enregistrant la distance jusqu'aux 3 points OM les plus proches. Cela fonctionne, mais retrouver son chemin en utilisant ces distances peut être frustrant.
+Le CarrArk Navigator est un outil open source conçu pour marquer et partager des emplacements en surface dans Star Citizen. Il comble une lacune en attendant l’intégration, dans la Starmap, du stockage et du partage de points d’intérêt.
+Chaque planète et lune du jeu dispose de marqueurs orbitaux (OM 1 à 6), géostationnaires et utilisables pour la navigation. Ces marqueurs permettent d’enregistrer une position en calculant la distance par rapport aux trois points OM les plus proches. Bien que cette méthode fonctionne, retrouver son chemin à l’aide de ces distances peut s’avérer fastidieux.
+Le CarrArk Navigator est une évolution du Nova Navigator (voir l’historique ci-dessous). Ses améliorations visent à simplifier son utilisation, notamment pour la communauté francophone, grâce à :
 
-Cet outil est tout simplement une amélioration du Nova Navigator (consultez l'historique ci-dessous), ces améliorations sont centrés sur sa simplification d'utilisation au profit de la communauté francophone (traduction, ajout d'un menu Aide, personnalisation des couleurs) . N'hésitez pas à copier, modifier et héberger votre propre version de cet outil. Il s'agit d'un site statique, il devrait donc être facile à implémenter dans un projet existant.
+- une traduction complète,
+- l’ajout d’un menu d’aide,
+- une personnalisation des couleurs.
+N’hésitez pas à copier, modifier ou héberger votre propre version de cet outil. Étant un site statique, son intégration dans un projet existant devrait être simple.
 
 ### Live Examples
 
@@ -20,13 +25,15 @@ Cet outil est tout simplement une amélioration du Nova Navigator (consultez l'h
 
 ## History
 
-En 2019 (à peu près ?), [SandovalBurrows](https://robertsspaceindustries.com/citizens/SandovalBurrows) @ [NOVA Intergalactic](https://novaintergalactic.com/) pensait calculer des itinéraires vers un emplacement de surface qu'il pourrait suivre en se rendant toujours à un point visible. Il a commencé à chercher et a découvert que [PandaBot](https://robertsspaceindustries.com/citizens/Pandabot) venait de publier quelque chose de similaire : https://pandabotz.github.io/sc-route-calc/ . Génial ! Il travaillait sur le Nova Trade Calculator à cette époque et il n'avais pas de temps à se consacrer à d'autres projets, il donc commencé à utiliser cet outil pour ses besoins de navigation.
+En 2019 (environ), [SandovalBurrows](https://robertsspaceindustries.com/citizens/SandovalBurrows), membre de [NOVA Intergalactic](https://novaintergalactic.com/), cherchait à calculer des itinéraires vers des emplacements en surface qu’il pourrait suivre en se dirigeant toujours vers un point visible. En explorant cette idée, il découvrit que [PandaBot](https://robertsspaceindustries.com/citizens/Pandabot) venait de publier un outil similaire : [SC Route Calc](https://pandabotz.github.io/sc-route-calc/). Une excellente trouvaille ! À l’époque, SandovalBurrows travaillait sur le Nova Trade Calculator et n’avait pas le temps de se consacrer à d’autres projets. Il se mit donc à utiliser cet outil pour ses besoins en navigation.
+Un Plus tard, une discussion sur Discord avec [LordSkippy](https://robertsspaceindustries.com/citizens/LordSkippy), également séduit par l’idée, le conduisit à découvrir que ce dernier développait VerseGuide. Cet outil, devenu indispensable pour les explorateurs, s’avéra cependant trop complexe pour [SandovalBurrows](https://robertsspaceindustries.com/citizens/SandovalBurrows). Il recherchait simplement un outil compact pour marquer (et éventuellement partager) des emplacements, de préférence utilisable depuis son téléphone.
+C’est ainsi qu’il décida de lancer le projet [NOVA Navigator](https://nova-public.gitlab.io/navigator/). À cette période, il expérimentait avec Three.js et choisit de l’utiliser pour la visualisation. Un avantage supplémentaire était de pouvoir exploiter la logique 3D pour simplifier ses calculs mathématiques et déboguer visuellement sa logique. Il mit au point un algorithme robuste, toujours utilisé aujourd’hui après plusieurs années.
+Pour rendre cet outil encore plus accessible, notamment à la communauté francophone et plus précisément à notre organisation SIBYLLA, j’ai décidé d’améliorer ce travail remarquable. Mon objectif principal était de le simplifier pour les non-initiés. Les améliorations incluent :
 
-Un peu plus tard, il a eu une discussion sur Discord avec [LordSkippy](https://robertsspaceindustries.com/citizens/LordSkippy) qui a également été séduit par l'idée de créer quelque chose comme cet outil. [LordSkippy](https://robertsspaceindustries.com/citizens/LordSkippy) a commencé à travailler sur https://verseguide.com. Cela s'est avéré génial (Un outil devenu un indispensable des explorateurs, jetez-y un œil). Un peu trop élaboré pour [SandovalBurrows](https://robertsspaceindustries.com/citizens/SandovalBurrows), il voulais juste un outil compact pour marquer (et peut-être partager) des emplacements, de préférence en utilisant son téléphone.
-
-C'est pourquoi [SandovalBurrows](https://robertsspaceindustries.com/citizens/SandovalBurrows) a décidé de commencer à travailler sur ce projet [NOVA Navigator](https://nova-public.gitlab.io/navigator/). À l'époque, il jouais avec Threejs et il a décidé de l'utiliser pour la visualisation. Un avantage supplémentaire était qu'il pouvais utiliser leur logique 3D pour garder ses mathématiques aussi simples que possible et déboguer sa logique visuellement. Il a mis au point un algorithme assez solide et qui est utiliser depuis quelques année maintenant.
-
-Afin de rendre encore plus simple d'utilisation au profit de la communauté francophone et plus précisemment notre organisation SIBYLLA, j'ai décidé d'améliorer ce travail que je trouve magnifique afin surtout de le rendre plus simple d'utilisation (pour les non-inités). Cette amélioration est passé par une traduction FR des instructions, l'ajout d'un bouton d'aide, l'ajout de Pyro et ces lunes et une petite personnalisation des couleurs. 
+- une traduction en français des instructions,
+- l’ajout d’un bouton d’aide,
+- l’intégration de Pyro, ses lunes et Nyx,
+- une personnalisation des couleurs.
 
 -- [Joe-Caire](https://robertsspaceindustries.com/citizens/Joe-Caire) @ [Sibylla](https://sibyllasc.fr/)
 
