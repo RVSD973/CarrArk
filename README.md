@@ -23,6 +23,16 @@ N’hésitez pas à copier, modifier ou héberger votre propre version de cet ou
 ### Editor example
 ![Editor example](image/example-screenshot-2.png "Editor example")
 
+## Documentation
+
+### Diagramme de Flux du Site
+Pour comprendre le fonctionnement et la navigation du site, consultez le [**Diagramme de Flux**](FLOW-DIAGRAM.md) qui illustre :
+- 📊 La structure complète des pages
+- 🔄 Les flux d'interaction utilisateur
+- 🧮 Le processus de calcul de navigation
+- 🎨 La visualisation 3D avec Three.js
+- 🔗 Les liens de navigation entre pages
+
 ## History
 
 En 2019 (environ), [SandovalBurrows](https://robertsspaceindustries.com/citizens/SandovalBurrows), membre de [NOVA Intergalactic](https://novaintergalactic.com/), cherchait à calculer des itinéraires vers des emplacements en surface qu’il pourrait suivre en se dirigeant toujours vers un point visible. En explorant cette idée, il découvrit que [PandaBot](https://robertsspaceindustries.com/citizens/Pandabot) venait de publier un outil similaire : [SC Route Calc](https://pandabotz.github.io/sc-route-calc/). Une excellente trouvaille ! À l’époque, SandovalBurrows travaillait sur le Nova Trade Calculator et n’avait pas le temps de se consacrer à d’autres projets. Il se mit donc à utiliser cet outil pour ses besoins en navigation.
