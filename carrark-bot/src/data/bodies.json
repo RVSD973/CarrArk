@@ -1,0 +1,254 @@
+[
+  {
+    "name": "Delamar",
+    "system": "Nyx",
+    "type": "planetoid",
+    "parentBody": null,
+    "bodyRadiusKm": 65,
+    "orbitalMarkerRadiusKm": 118.89,
+    "variants": ["live"]
+  },
+  {
+    "name": "Pyro I",
+    "system": "Pyro",
+    "type": "planet",
+    "parentBody": null,
+    "bodyRadiusKm": 411.7,
+    "orbitalMarkerRadiusKm": 603.545,
+    "variants": ["live", "ptu"]
+  },
+  {
+    "name": "Monox (Pyro II)",
+    "system": "Pyro",
+    "type": "planet",
+    "parentBody": null,
+    "bodyRadiusKm": 529.5,
+    "orbitalMarkerRadiusKm": 770.14,
+    "variants": ["live", "ptu"]
+  },
+  {
+    "name": "Bloom (Pyro III)",
+    "system": "Pyro",
+    "type": "planet",
+    "parentBody": null,
+    "bodyRadiusKm": 413.9,
+    "orbitalMarkerRadiusKm": 606.657,
+    "variants": ["live", "ptu"]
+  },
+  {
+    "name": "Pyro IV",
+    "system": "Pyro",
+    "type": "planet",
+    "parentBody": null,
+    "bodyRadiusKm": 321.4,
+    "orbitalMarkerRadiusKm": 475.842,
+    "variants": ["live", "ptu"]
+  },
+  {
+    "name": "Adir",
+    "system": "Pyro",
+    "type": "moon",
+    "parentBody": "Pyro IV",
+    "bodyRadiusKm": 431,
+    "orbitalMarkerRadiusKm": 625.184,
+    "variants": ["live", "ptu"]
+  },
+  {
+    "name": "Fairo",
+    "system": "Pyro",
+    "type": "moon",
+    "parentBody": "Pyro IV",
+    "bodyRadiusKm": 392.24,
+    "orbitalMarkerRadiusKm": 570.368,
+    "variants": ["live", "ptu"]
+  },
+  {
+    "name": "Fuego",
+    "system": "Pyro",
+    "type": "moon",
+    "parentBody": "Pyro IV",
+    "bodyRadiusKm": 465.67,
+    "orbitalMarkerRadiusKm": 671.385,
+    "variants": ["live", "ptu"]
+  },
+  {
+    "name": "Ignis",
+    "system": "Pyro",
+    "type": "moon",
+    "parentBody": "Pyro IV",
+    "bodyRadiusKm": 393.17,
+    "orbitalMarkerRadiusKm": 568.855,
+    "variants": ["live", "ptu"]
+  },
+  {
+    "name": "Vatra",
+    "system": "Pyro",
+    "type": "moon",
+    "parentBody": "Pyro IV",
+    "bodyRadiusKm": 365.81,
+    "orbitalMarkerRadiusKm": 530.162,
+    "variants": ["live", "ptu"]
+  },
+  {
+    "name": "Vuur",
+    "system": "Pyro",
+    "type": "moon",
+    "parentBody": "Pyro IV",
+    "bodyRadiusKm": 452.83,
+    "orbitalMarkerRadiusKm": 653.227,
+    "variants": ["live", "ptu"]
+  },
+  {
+    "name": "Terminus (Pyro VI)",
+    "system": "Pyro",
+    "type": "planet",
+    "parentBody": null,
+    "bodyRadiusKm": 285,
+    "orbitalMarkerRadiusKm": 424.366,
+    "variants": ["live", "ptu"]
+  },
+  {
+    "name": "ArcCorp",
+    "system": "Stanton",
+    "type": "planet",
+    "parentBody": null,
+    "bodyRadiusKm": 800,
+    "orbitalMarkerRadiusKm": 1151.452,
+    "variants": ["live", "ptu"]
+  },
+  {
+    "name": "Lyria",
+    "system": "Stanton",
+    "type": "moon",
+    "parentBody": "ArcCorp",
+    "bodyRadiusKm": 223,
+    "orbitalMarkerRadiusKm": 331.03,
+    "variants": ["live", "ptu"]
+  },
+  {
+    "name": "Wala",
+    "system": "Stanton",
+    "type": "moon",
+    "parentBody": "ArcCorp",
+    "bodyRadiusKm": 283,
+    "orbitalMarkerRadiusKm": 415.88,
+    "variants": ["live", "ptu"]
+  },
+  {
+    "name": "Crusader",
+    "system": "Stanton",
+    "type": "planet",
+    "parentBody": null,
+    "bodyRadiusKm": 7450,
+    "orbitalMarkerRadiusKm": 10673.17,
+    "variants": ["live", "ptu"]
+  },
+  {
+    "name": "Cellin",
+    "system": "Stanton",
+    "type": "moon",
+    "parentBody": "Crusader",
+    "bodyRadiusKm": 260,
+    "orbitalMarkerRadiusKm": 383.35,
+    "variants": ["live", "ptu"]
+  },
+  {
+    "name": "Daymar",
+    "system": "Stanton",
+    "type": "moon",
+    "parentBody": "Crusader",
+    "bodyRadiusKm": 295,
+    "orbitalMarkerRadiusKm": 432.85,
+    "variants": ["live", "ptu"]
+  },
+  {
+    "name": "Yela",
+    "system": "Stanton",
+    "type": "moon",
+    "parentBody": "Crusader",
+    "bodyRadiusKm": 313,
+    "orbitalMarkerRadiusKm": 458.31,
+    "variants": ["live", "ptu"]
+  },
+  {
+    "name": "Hurston",
+    "system": "Stanton",
+    "type": "planet",
+    "parentBody": null,
+    "bodyRadiusKm": 1000,
+    "orbitalMarkerRadiusKm": 1436.8,
+    "variants": ["live", "ptu"]
+  },
+  {
+    "name": "Aberdeen",
+    "system": "Stanton",
+    "type": "moon",
+    "parentBody": "Hurston",
+    "bodyRadiusKm": 274,
+    "orbitalMarkerRadiusKm": 403.15,
+    "variants": ["live", "ptu"]
+  },
+  {
+    "name": "Arial",
+    "system": "Stanton",
+    "type": "moon",
+    "parentBody": "Hurston",
+    "bodyRadiusKm": 344.5,
+    "orbitalMarkerRadiusKm": 502.85,
+    "variants": ["live", "ptu"]
+  },
+  {
+    "name": "Ita",
+    "system": "Stanton",
+    "type": "moon",
+    "parentBody": "Hurston",
+    "bodyRadiusKm": 325,
+    "orbitalMarkerRadiusKm": 475.28,
+    "variants": ["live", "ptu"]
+  },
+  {
+    "name": "Magda",
+    "system": "Stanton",
+    "type": "moon",
+    "parentBody": "Hurston",
+    "bodyRadiusKm": 340.83,
+    "orbitalMarkerRadiusKm": 497.6,
+    "variants": ["live", "ptu"]
+  },
+  {
+    "name": "MicroTech",
+    "system": "Stanton",
+    "type": "planet",
+    "parentBody": null,
+    "bodyRadiusKm": 1000,
+    "orbitalMarkerRadiusKm": 1439.593,
+    "variants": ["live", "ptu"]
+  },
+  {
+    "name": "Calliope",
+    "system": "Stanton",
+    "type": "moon",
+    "parentBody": "MicroTech",
+    "bodyRadiusKm": 240,
+    "orbitalMarkerRadiusKm": 355.07,
+    "variants": ["live", "ptu"]
+  },
+  {
+    "name": "Clio",
+    "system": "Stanton",
+    "type": "moon",
+    "parentBody": "MicroTech",
+    "bodyRadiusKm": 337.17,
+    "orbitalMarkerRadiusKm": 492.49,
+    "variants": ["live", "ptu"]
+  },
+  {
+    "name": "Euterpe",
+    "system": "Stanton",
+    "type": "moon",
+    "parentBody": "MicroTech",
+    "bodyRadiusKm": 213,
+    "orbitalMarkerRadiusKm": 316.88,
+    "variants": ["live", "ptu"]
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "name": "carrark-bot",
+  "version": "1.0.0",
+  "description": "CarrArk Navigator Discord bot core extraction",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node --test",
+    "start": "node src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "discord.js": "^14.26.4"
+  }
+}
